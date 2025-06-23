@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmbfugs723gxg"]
+
+[ext_resource type="Script" uid="uid://oxd1u7mke6ho" path="res://scripts/game objects/game_manager.gd" id="1_hwd4i"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_hwd4i")
+
+[node name="Timer" type="Timer" parent="."]

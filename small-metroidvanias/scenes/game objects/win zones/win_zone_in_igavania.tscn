@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b35vvx7xqe6wd"]
+
+[ext_resource type="Script" uid="uid://dlq37a5bdhvc" path="res://scripts/game objects/win_zone_in_igavania.gd" id="1_avsof"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_btk8o"]
+size = Vector2(10, 16)
+
+[node name="exit 1" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_avsof")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_btk8o")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
